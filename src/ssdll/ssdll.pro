@@ -61,6 +61,7 @@ unix {
 }
 
 linux-g++-64 {
+    QMAKE_CXXFLAGS *= -std=gnu++11
     LIBS += -lz
     CONFIG += staticlib
     target.path = "$$PWD/../../../libs/"
